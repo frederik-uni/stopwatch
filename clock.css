@@ -1,0 +1,91 @@
+.container {
+    position: relative;
+    display: flex;
+}
+.digit {
+    display: grid;
+    width: 50px;
+    height: 80px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    margin: 5px;
+}
+
+.seperator {
+    display: flex;
+    margin-top: 5px;
+    height: 80px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.seperator .dot {
+    background: black;
+    width: 8px;
+    height: 8px;
+}
+
+.dot1 {
+    margin-top: 15px;
+}
+
+.dot2 {
+    margin-bottom: 30px;
+}
+
+.seperator {
+    height: 80px;
+    width: 20px;
+}
+.line {
+    background: black;
+}
+
+.vertical {
+    width: 1px;
+}
+
+.horizontal {
+    grid-column: 1 / -1;
+    height: 1px;
+}
+
+.vertical-top {
+    grid-row: 1 / 4;
+}
+
+.vertical-bottom {
+    grid-row: 4 / -1;
+}
+
+.line-top {
+    grid-row: 1;
+}
+
+.line-center {
+    grid-row: 4;
+}
+
+.line-bottom {
+    grid-row: -1;
+}
+
+.line-top-left {
+    grid-column: 1;
+}
+
+.line-top-right {
+    grid-column: -1;
+}
+
+.line-bottom-left {
+    grid-column: 1;
+}
+
+.line-bottom-right {
+    grid-column: -1;
+}
+
+.hidden {
+    background: none;
+}
